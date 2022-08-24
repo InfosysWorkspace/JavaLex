@@ -1,4 +1,4 @@
-package com.infosys.introToClassObjects;
+package com.infosys;
 
 public class Account {
 

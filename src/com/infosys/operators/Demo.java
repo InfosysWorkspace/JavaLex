@@ -1,4 +1,4 @@
-package com.infosys.introToClassObjects;
+package com.infosys.operators;
 
 public class Demo {
     public static void main(String[] args) {
