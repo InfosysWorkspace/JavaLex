@@ -1,0 +1,11 @@
+Choose the right collection based on the requirement to improve performance. Some of the points to be considered are:
+
+If duplicate elements are not allowed to choose Set otherwise choose List.
+
+ArrayList is quicker than LinkedList to randomly access elements.
+
+For quick removal and addition, LinkedList is better than ArrayList.
+
+Use collections such as TreeMap, TreeSet when elements in the collection are required to be sorted and ordered.
+
+Use concurrent collections to support concurrent access.
