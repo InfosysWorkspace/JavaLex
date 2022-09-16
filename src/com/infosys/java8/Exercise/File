@@ -1,0 +1,14 @@
+7a. Immutable objects are simple
+b. Immutable classes are thread safe, they require no synchronisation
+
+10. package p1;
+    class A {}
+
+    package p2;
+    import p1.A
+    class B extends A {}
+
+ 14. ii - method to be invoked is decided at runtime
+     iii - method to be invoked is decided base on the object
+
+  15. protected
