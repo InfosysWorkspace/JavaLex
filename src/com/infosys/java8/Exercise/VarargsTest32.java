@@ -8,8 +8,8 @@ public class VarargsTest32 {
     public static void displayRegn(String nameOfSport, int... iDs){
 
         System.out.println("Registration for " +nameOfSport+": ");
-        for(int i = 0; i < iDs.length; i++){
-            System.out.println(iDs[i] + " ");
+        for (int iD : iDs) {
+            System.out.println(iD + " ");
         }
     }
 }

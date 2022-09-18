@@ -3,7 +3,7 @@ package com.infosys.java8.Exercise;
 public class TesterBase {
     public static void main(String[] args) {
         Base2 obj = new Derive2();
-//        obj.method2();
+        obj.method2(23);
     }
 }
 class Base2{
@@ -18,5 +18,5 @@ class Derive2 extends Base2{
     }
 }
 
-// Output: compilation error
+// Output: Base Method
 

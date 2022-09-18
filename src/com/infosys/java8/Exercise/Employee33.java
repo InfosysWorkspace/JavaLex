@@ -15,6 +15,10 @@ class Trainee33 extends Employee33{
         System.out.println(name);
     }
 
+    public void print(int age){
+        System.out.println("Trainee");
+    }
+
     public static void main(String[] args) {
         Trainee33 train = new Trainee33();
         train.display();
