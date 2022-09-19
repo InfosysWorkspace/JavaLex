@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Î×‚ÿÿÿÿÿ
+R
+java:S1610"7Convert the abstract class "Person1" into an interface.(ä¿ü‘ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(…ı““
