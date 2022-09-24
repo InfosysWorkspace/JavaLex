@@ -27,3 +27,13 @@ e
 5src/com/infosys/java811/dateTime/LocalDateTryout.java,f\b\fbf4b22c1b2e71ecdcc8653225cfdc80789641d4
 e
 5src/com/infosys/java811/dateTime/LocalTimeTryout.java,2\7\276e6f4ae054415c23a3d16b7ee443860a99b624
+d
+4src/com/infosys/java811/construct/StudentDetail.java,2\c\2cb10cef7ad9ff730e4fa9c8f62ed9a5d4402706
+a
+1src/com/infosys/java811/inheritance/Employee.java,5\d\5d584bc9b2287e69335043e202d2e216f5769176
+\
+,src/com/infosys/java811/varargs/Varargs.java,3\a\3ab48b7dd71ffba6b6fb2bcd79af2fa0d0d69e08
+i
+9src/com/infosys/java811/staticKeyword/StudentDetails.java,2\4\2476a4922b296c0357a1caa283ee0e8aeee597a5
+d
+4src/com/infosys/java811/methodOverloading/Shape.java,7\1\7102f1e02c59da35cd316218484bef8620f7978f
