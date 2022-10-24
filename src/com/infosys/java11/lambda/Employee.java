@@ -14,6 +14,9 @@ Expressions as arguments, which provide the format for ordering.
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 /**
  * Comparable<T> interface is implemented by the class to Override
@@ -88,5 +91,56 @@ class EmployeeDemo {
                 new Employee("1003", "Maryam", "Consultant", 65000),
                 new Employee("1004", "Fatima", "Manager", 40000)
         );
+
+        /**
+         * 		1. Adding 5000 to the salary of employees, who are "Manager":
+         */
+        for (Employee e : employeeList){
+            // Displaying salary of all employees, who are "Manager"
+            Consumer<Employee> beforeInc = emp -> System.out.println(e.getEmpName()
+                    + "(" +e.getEmpRole() + ") " + "had salary before Increment: " + e.getSalary());
+            beforeInc.accept(e);
+
+            // Increment Salary of only Manager using "Function"
+            Function<Employee, Integer> salaryIncrease = emp -> e.getEmpRole().equals("Manager") ?
+                    e.getSalary() + 5000 : e.getSalary();
+            e.setSalary(salaryIncrease.apply(e));
+
+            // Displaying Salary of all Employees after Increment
+            Consumer<Employee> afterInc = emp -> System.out.println(e.getEmpName() +
+                    " (" +e.getEmpRole() + ") " + "has salary after Increment: " +e.getSalary());
+            afterInc.accept(e);
+        }
+
+        /**
+         * 		2. Sorting the List of Employee Objects on the basis of Employee Name:
+         */
+        System.out.println();
+        System.out.println("Employee List before Sorting");
+        //Displaying List before Sorting
+        for (Employee e : employeeList){
+            System.out.println(e.getEmpId() + "--" + e.getEmpName() + "--" +e.getEmpRole());
+        }
+        System.out.println();
+
+        //Sorting List using list.sort() and Lambda Expression
+        //list.sort uses Comparator Interface (Comparable<T>) for sorting
+        employeeList.sort((empObj1, empObj2) -> empObj1.compareTo(empObj2));
+
+        //Displaying List after sorting
+        System.out.println("Employee list after sorting: ");
+        for (Employee e : employeeList){
+            System.out.println(e.getEmpId() + "--" + e.getEmpName() + "--" +e.getEmpRole());
+        }
+        System.out.println();
+
+        /**
+         * 		3. Verifying Employees who are "Consultant":
+         */
+        for (Employee e : employeeList){
+            Predicate<Employee> checkConsultant =  (emp) -> emp.getEmpRole().equals("Consultant");
+            System.out.println("is " + e.getEmpName() + " a Consultant? : "+ checkConsultant.test(e));
+        }
+
     }
 }
