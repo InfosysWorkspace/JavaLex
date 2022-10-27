@@ -1,14 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(üœ‘¿ûÿÿÿÿ
-T
-java:S3400"9Remove this method and declare a constant for this value.(Ù—†Ğûÿÿÿÿ
-S	java:S106	"9Replace this use of System.out or System.err by a logger.(ëı‹»ûÿÿÿÿ
-T
-java:S3400"9Remove this method and declare a constant for this value.(¥¡Ì’üÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(³ÿ½£
-@
-java:S1172"*Remove this unused method parameter "pet".(€‡ŞÔ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(äÊÊşüÿÿÿÿ
-L
-java:S1172"*Remove this unused method parameter "pet".(òïÌşÿÿÿÿ8ª†Ü·0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ş“¥‘ÿÿÿÿÿ8¬†Ü·0
